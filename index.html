@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets/style/style.css" rel="stylesheet" type="text/css" />
+    <title>Take Order - Noreen's Cafe</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="logo">Noreen's Cafe</a>
+      <div class="header-right">
+        <a class="active" href="index.html">Take Order</a>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div class="div1" id="div1"></div>
+
+      <div class="div2" id="div2">
+        <div class="button" id="button">
+          <button
+            class="traditional-btn"
+            id="traditionalbtn"
+            onclick="getTraditional();"
+          >
+            Traditional
+          </button>
+          <button class="chinese-btn" id="chinesebtn" onclick="getChineese();">
+            Chinese
+          </button>
+          <button
+            class="fastFood-btn"
+            id="fastFoodbtn"
+            onclick="getFastFood();"
+          >
+            Fast Food
+          </button>
+        </div>
+        <br />
+        <div id="trd-div"></div>
+      </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
