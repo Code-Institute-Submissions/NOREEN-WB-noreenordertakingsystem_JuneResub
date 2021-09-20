@@ -282,7 +282,6 @@ html += `
 document.getElementById("trd-div").innerHTML = html;
 }
 
-
 // print the order given by user. using window.print() method -- optional if not allowed i'll remove it.
 // idea taken after research most of the restaurants use print functionality
 
@@ -320,7 +319,6 @@ function print() {
     ps.print();
   }
 }
-
 
 
 //process Order
