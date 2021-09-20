@@ -198,3 +198,17 @@ html += `
 
 document.getElementById("trd-div").innerHTML = html;
 }
+// Menu list for fastFood
+function getFastFood() {
+  let html = `
+    <table class="table">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+      </thead>
+    <tbody>
+  `;
+}
