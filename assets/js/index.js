@@ -164,3 +164,17 @@ function getTraditional() {
 
   document.getElementById("trd-div").innerHTML = html;
 }
+// Menu List for Chineese
+function getChineese() {
+  let html = `
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+    <tbody>
+  `;
+}
