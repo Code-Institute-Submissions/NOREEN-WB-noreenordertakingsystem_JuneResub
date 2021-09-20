@@ -167,3 +167,47 @@ body {
     font-size: 10px;
   }
 }
+/*-- TRD/Chineese/FastFood - Table Design --*/
+.table {
+  border: solid #009879 1px;
+  border-radius: 50px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 5px;
+  border-collapse: separate;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  width: 90%;
+  margin-left: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+.table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.table th,
+.table td {
+  text-align: center;
+  padding: 12px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+h2 {
+  color: #009879;
+  text-align: center;
+}
+.menus-row {
+  cursor: pointer;
+}
