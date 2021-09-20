@@ -143,3 +143,24 @@ function getTraditional() {
       </thead>
     <tbody>
   `;
+  //loop through the menu array and get the traditional dishes from it - then send it for orderDetail array using onClick function
+
+  for (let i = 0; i < menus.length; i++) {
+    if (menus[i].typeId === 1) {
+      let rowHtml = `
+      <tr class="menus-row" onclick="clicked(${menus[i].id})">
+        <td>${menus[i].id}</td>
+        <td>${menus[i].name}</td>
+        <td>${menus[i].price}</td>
+      </tr>
+    `;
+      html += rowHtml;
+    }
+  }
+  html += `
+    </tbody>
+    </table>
+  `;
+
+  document.getElementById("trd-div").innerHTML = html;
+}
