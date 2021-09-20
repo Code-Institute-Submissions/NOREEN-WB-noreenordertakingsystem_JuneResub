@@ -7,6 +7,19 @@ function onclick(id){
   const item = menus.filter((x) => x.id === id);
   let a = item[0].price;
   var o = orders.find((x) => x.name == item[0].name);
+  //sort the value's from array to push (show) them in orderDetail's array
+  if (o == null || o == undefined) {
+    o = {
+      name: item[0].name,
+      quantity: 1,
+      amount: item[0].price,
+    };
+
+    orders.push(o);
+  } else {
+    o.quantity++;
+    o.amount = item[0].price * o.quantity;
+  }
 }
 
 
