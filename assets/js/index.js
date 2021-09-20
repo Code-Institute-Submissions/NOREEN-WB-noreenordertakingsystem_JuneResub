@@ -283,6 +283,46 @@ document.getElementById("trd-div").innerHTML = html;
 }
 
 
+// print the order given by user. using window.print() method -- optional if not allowed i'll remove it.
+// idea taken after research most of the restaurants use print functionality
+
+var style =
+  ".table { border: solid #009879 1px; border-radius: 50px; -moz-border-radius: 6px; -webkit-border-radius: 5px; border-collapse: separate; text-align: center; font-size: 0.9em; font-family: sans-serif; width: 90%; margin-left: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); margin-bottom: 30px;}";
+
+//ps => printscreen
+
+var ps;
+
+// print the order by creating a new table.
+
+function printOrder() {
+  var ps = window.open("", "PRINT", "height=600,width=400");
+
+  ps.document.write("<html><head><style>" + style + "</style></head><body>");
+  ps.document.write("<h1>Order Details</h1>");
+  ps.document.write(
+    '<button onclick="print();" padding-bottom: 5px;">Print</button>'
+  );
+  ps.document.write(document.getElementById("order-div").innerHTML);
+  ps.document.write("Total Amount: " + sum);
+  ps.document.write("</body></html>");
+
+  //ps.document.close();
+
+  ps.window.print();
+
+  document.getElementById("tbody").innerHTML = "";
+  orders = [];
+}
+
+function print() {
+  if (ps != null) {
+    ps.print();
+  }
+}
+
+
+
 //process Order
 //for alert's i did not use the built in method alert() - i use third party cdn sweetalert - which provides beautiful UI for alert's.
 let sum = 0.0;
