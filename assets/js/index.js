@@ -20,6 +20,20 @@ function onclick(id){
     o.quantity++;
     o.amount = item[0].price * o.quantity;
   }
+  // after getting the sorted result - place it in orderdetail table
+
+  let rowHtml = "";
+
+  for (order of orders) {
+    rowHtml += `
+      <tr>
+        <td>${order.name}</td>
+        <td>${order.quantity}</td>
+        <td>${order.amount}</td>
+      </tr>
+    `;
+  }
+  document.getElementById("tbody").innerHTML = rowHtml;
 }
 
 
