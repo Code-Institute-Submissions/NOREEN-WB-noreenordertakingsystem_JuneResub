@@ -130,3 +130,16 @@ const menus = [
     price: 70,
   },
 ];
+// Menu List for Traditonal Item's
+function getTraditional() {
+  let html = `
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+    <tbody>
+  `;
