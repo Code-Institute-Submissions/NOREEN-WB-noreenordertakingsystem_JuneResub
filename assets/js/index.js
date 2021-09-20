@@ -1,3 +1,9 @@
+//  Orders Array
+var orders = [];
+var result = 0;
+
+
+
 // Type Array to differentiate menu
 const type = [
   {
