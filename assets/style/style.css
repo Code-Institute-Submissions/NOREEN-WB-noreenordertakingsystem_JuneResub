@@ -151,3 +151,19 @@ body {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
 }
+.div2 hr {
+  width: 50%;
+  border: 1px solid #009879;
+}
+
+@media screen and (max-width: 500px) {
+  .traditional-btn {
+    font-size: 10px;
+  }
+  .chinese-btn {
+    font-size: 10px;
+  }
+  .fastFood-btn {
+    font-size: 10px;
+  }
+}
