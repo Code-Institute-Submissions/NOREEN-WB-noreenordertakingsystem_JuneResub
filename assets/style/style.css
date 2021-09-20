@@ -38,3 +38,23 @@ body {
   background-color: dodgerblue;
   color: white;
 }
+.header-right {
+  display: flex;
+  float: right;
+}
+.processbtn {
+  text-align: center;
+}
+.processbtn button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 32px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
