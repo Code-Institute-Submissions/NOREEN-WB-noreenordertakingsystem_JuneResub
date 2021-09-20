@@ -1,7 +1,13 @@
 //  Orders Array
 var orders = [];
 var result = 0;
-
+//onclick fucntion to get data from menu array
+function onclick(id){
+  //filter the menu array to get the dish that  user clicked on menu
+  const item = menus.filter((x) => x.id === id);
+  let a = item[0].price;
+  var o = orders.find((x) => x.name == item[0].name);
+}
 
 
 // Type Array to differentiate menu
