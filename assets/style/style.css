@@ -12,6 +12,7 @@ body {
   background-color: #f1f1f1;
   padding: 20px 10px;
 }
+
 .header a {
   float: left;
   color: black;
@@ -38,6 +39,7 @@ body {
   background-color: dodgerblue;
   color: white;
 }
+
 .header-right {
   display: flex;
   float: right;
@@ -151,6 +153,7 @@ body {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
 }
+
 .div2 hr {
   width: 50%;
   border: 1px solid #009879;
@@ -593,4 +596,21 @@ textarea.input {
 }
 .input-container.error input {
   border: 2px solid rgb(228, 29, 22);
+}
+.map{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.map h1{
+  margin-top: 30px;
+}
+.map iframe{
+  width: 100%;
+  min-height: 60vh;
+}
+.header4 h3{
+  color: black;
+  text-align: center;
 }
