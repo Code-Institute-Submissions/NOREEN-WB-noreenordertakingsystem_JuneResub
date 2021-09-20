@@ -383,3 +383,94 @@ function processorder() {
     Swal.fire("No order given", "You have not orderd any thing", "warning");
   }
 }
+
+
+//Contact from focus and effects
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+
+//form validation
+  //get elements from html by using js method 
+let namee = document.getElementById("username");
+let emaill = document.getElementById("email");
+let phone = document.getElementById("phone");
+let messg = document.getElementById("msg");
+let form = document.querySelector("form1");
+
+//validate inputs
+
+function validateInput() {
+  if (namee.value.trim() === "") {
+    onError(namee, "User name cannot be empty");
+  } else {
+    onSuccess(namee);
+  }
+  if (emaill.value.trim() === "") {
+    onError(emaill, "Email cannot be empty");
+  } else {
+    if (!isValidEmail(email.value.trim())) {
+      onError(emaill, "Email is not valid");
+    } else {
+      onSuccess(emaill);
+    }
+  }
+  if (phone.value.trim() === "") {
+    onError(phone, "Phone N0 cannot be empty");
+  } else {
+    onSuccess(phone);
+  }
+  if (messg.value.trim() === "") {
+    onError(messg, "You must type something");
+  } else {
+    onSuccess(messg);
+  }
+}
+var sbmt = document.getElementById("sb");
+if (sbmt) {
+  sbmt.addEventListener("click", (event) => {
+    event.preventDefault();
+    validateInput();
+  });
+}
+
+
+function onSuccess(input) {
+  let parent = input.parentElement;
+  let msg = parent.querySelector("small");
+  msg.style.visibility = "hidden";
+  parent.classList.remove("error");
+  parent.classList.add("success");
+}
+function onError(input, message) {
+  let parent = input.parentElement;
+  let msg = parent.querySelector("small");
+  msg.style.visibility = "visible";
+  msg.innerText = message;
+  parent.classList.add("error");
+  parent.classList.remove("success");
+}
+function isValidEmail(email) {
+  return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}
+
+
