@@ -15,7 +15,7 @@ function clicked(id){
   const item = menus.filter((x) => x.id === id);
   let a = item[0].price;
   var o = orders.find((x) => x.name == item[0].name);
-  
+
   //sort the value's from array to push (show) them in orderDetail's array
   if (o == null || o == undefined) {
     o = {
@@ -280,4 +280,68 @@ html += `
 `;
 
 document.getElementById("trd-div").innerHTML = html;
+}
+
+
+//process Order
+//for alert's i did not use the built in method alert() - i use third party cdn sweetalert - which provides beautiful UI for alert's.
+let sum = 0.0;
+function processorder() {
+  sum = 0;
+  if (orders.length > 0) {
+    for (let i in result) {
+      sum += result[i];
+    }
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger",
+      },
+      buttonsStyling: false,
+    });
+    //show's total amount of the order and asks permision to process it
+    swalWithBootstrapButtons
+      .fire({
+        title: "SubTotal",
+        text: "Total For Your order is : " + sum,
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonText: "Yes, ProcessOrder",
+        cancelButtonText: "No, cancel!",
+        reverseButtons: true,
+      })
+      // if accepted by the user - order will be processed
+      // if rejecetd it will take back to orderscreen
+      .then((result) => {
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons
+            .fire({
+              title: "In Progress!",
+              text: "Your order is in process",
+              icon: "success",
+              showCancelButton: true,
+              confirmButtonText: "Print Receipt",
+              cancelButtonText: "close",
+              reverseButtons: true,
+            })
+            .then((r) => {
+              if (r.isConfirmed) {
+                //window.print();
+                printOrder();
+              } else {
+                document.getElementById("tbody").innerHTML = "";
+                orders = [];
+              }
+            });
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          swalWithBootstrapButtons.fire(
+            "Cancelled",
+            "You cancel the order",
+            "error"
+          );
+        }
+      });
+  } else {
+    Swal.fire("No order given", "You have not orderd any thing", "warning");
+  }
 }
