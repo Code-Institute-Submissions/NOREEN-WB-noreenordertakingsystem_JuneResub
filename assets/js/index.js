@@ -1,12 +1,21 @@
 //  Orders Array
 var orders = [];
 var result = 0;
+
+//To Calculate SubTotal
+function extractValue(arr, prop) {
+  // extract value from property
+  let extractedValue = arr.map((item) => item[prop]);
+  return extractedValue;
+}
+
 //onclick fucntion to get data from menu array
-function onclick(id){
+function clicked(id){
   //filter the menu array to get the dish that  user clicked on menu
   const item = menus.filter((x) => x.id === id);
   let a = item[0].price;
   var o = orders.find((x) => x.name == item[0].name);
+  
   //sort the value's from array to push (show) them in orderDetail's array
   if (o == null || o == undefined) {
     o = {
@@ -34,6 +43,7 @@ function onclick(id){
     `;
   }
   document.getElementById("tbody").innerHTML = rowHtml;
+  result = extractValue(orders, "amount");
 }
 
 
