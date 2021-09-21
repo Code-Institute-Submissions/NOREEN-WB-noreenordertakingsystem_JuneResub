@@ -188,3 +188,47 @@ I have tested my site on multiple devices. These include:
   - iPhone XS Max
   - iPad Pro (1024 x 1366)
   - Huawei P20 Pro
+
+  # 5. Bugs
+  [Go to the top](#table-of-contents)
+
+### Bugs
+
+- Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.
+- Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform
+- These two warining exists in the javascript file it's bcacuse of chome version.
+
+### Solved Bugs
+
+- I will try to fix this by checking it in different browser.
+
+   <a name="deployment"></a>
+# 6. Deployment
+  [Go to the top](#table-of-contents)
+
+The site was deployed to GitHub pages using the following steps:
+- Sign up to GutHub
+- Create a new repository on GitHub.
+- Click on settings on the navigation bar under the repository title.
+- Select pages on the left menu bar.
+- Click on the master branch and save.
+- This will now generate a link with your website live.
+- The live link can be found here - (https://noreen-wb.github.io/noreenordertakingsystem/index.html)
+
+<a name="acknowledgement"></a>
+# 7. Acknowledgement
+  [Go to the top](#table-of-contents)
+  
+### Code
+* sweetalert was used to pop up the message.
+* The structure of the website came from the easy Tutorials.
+* Coding for feedback.html page was inspired from differnt tutorial from https://codeinstitute.net/ 
+* The icons in the footer and contact page came from [Font Awesome](https://fontawesome.com/)
+* For README.md file, reference of https://github.com/Chris-McGonigle/emmas-beauty-parlour and https://github.com/iKelvvv/MS1 was considered. 
+* Thanks to my mentor Marcel Mulders for his constructive feedback.
+
+### Content
+* All images came from unsplash https://unsplash.com/s/photos/food?orientation=landscape
+* Description of the chefs was taken from varius google links.
+* Famous Chef names and picture were taken from ther personal websites and google.
+
