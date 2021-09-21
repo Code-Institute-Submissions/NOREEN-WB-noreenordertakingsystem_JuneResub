@@ -128,3 +128,4 @@ Secreen shot of the Home page is below:
 ![introduction page review ](assets/images/ChineeseScreen.JPG)
 ![introduction page review ](assets/images/FastFoodScreen.JPG)
 ![introduction page review ](assets/images/OrderDetailScreen.JPG)
+![introduction page review ](assets/images/SubTotalScreen.JPG)
