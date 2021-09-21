@@ -69,3 +69,6 @@ Other foreground and background color used in the sites are
 
 
 ![Desktop Version](assets/images/Home.PNG)
+
+### Traditional
+![Desktop Version](assets/images/Traditional.PNG)
