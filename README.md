@@ -66,3 +66,6 @@ Other foreground and background color used in the sites are
 
 <a name="introduction-page"></a>
 ### Introduction Page
+
+
+![Desktop Version](assets/images/Home.PNG)
