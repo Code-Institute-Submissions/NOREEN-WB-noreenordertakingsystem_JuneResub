@@ -177,3 +177,14 @@ In order to make sure that design web pages are responsive to all device sizes, 
 ![w3cvalidator ](assets/images/w3cvalidator.PNG)
 jigsawvalidator
 ![jigsawvalidator ](assets/images/jigsawvalidator.PNG)
+
+## 4.2 Manual Testing
+
+I have tested my site on multiple devices. These include:
+  - Galaxy S5 (360 x 640)
+  - iPhone 6/7/8 (375 x 667) 
+  - iPhone 6/7/8 plus (414 x 736)
+  - ipad (768 x 1024)
+  - iPhone XS Max
+  - iPad Pro (1024 x 1366)
+  - Huawei P20 Pro
