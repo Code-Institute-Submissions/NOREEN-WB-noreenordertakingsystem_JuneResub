@@ -130,3 +130,13 @@ Secreen shot of the Home page is below:
 ![introduction page review ](assets/images/OrderDetailScreen.JPG)
 ![introduction page review ](assets/images/SubTotalScreen.JPG)
 ![introduction page review ](assets/images/CancelScreen.JPG)
+
+### Contact Page
+
+
+- This page has same logo placement and navigation bar.
+- Location of our cafe is displayed.
+- Form is there to cantact to cafe's management.
+- Social media links are also provided.
+
+![introduction page review ](assets/images/ContactScreen.JPG)
