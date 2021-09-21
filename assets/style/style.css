@@ -622,6 +622,7 @@ textarea.input {
 }
 .map h1{
   margin-top: 30px;
+  color: purple;
 }
 .map iframe{
   width: 100%;
