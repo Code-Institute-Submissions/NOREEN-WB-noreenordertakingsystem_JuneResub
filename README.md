@@ -98,3 +98,13 @@ Other foreground and background color used in the sites are
 
 ### Mobile Contact
 ![Mobile Version](assets/images/mobile-Contact.PNG)
+
+# 2. Features
+  [Go to the top](#table-of-contents)
+  
+- Noreen's Cafe Hyper link is placed at the top left of each of the website. 
+- Navigation bar is placed at top right of each page of the website.
+- Sweetalert is used to create beautiful alerts.
+- Social media links is placed at bottom of each page.
+- All the dishes that are served in noreen's Cafe is displayed with its description and it's origin and price. 
+- Dishes are categorised is three sections. Traditional, chinese and fast food for better understanding of the user.
