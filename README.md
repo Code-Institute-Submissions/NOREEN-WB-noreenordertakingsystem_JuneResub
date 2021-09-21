@@ -157,3 +157,10 @@ Secreen shot of the Home page is below:
 * [W3C Markup](https://validator.w3.org/) and [Jigsaw validation](https://jigsaw.w3.org/) tools were used to validate the HTML code and CSS style used in the proejct.
 * [Ami](http://ami.responsivedesign.is/#) was used to develop a Mockup screenshot generator
 * [JShint] was used to test script.
+
+  <a name="testing"></a>
+# 4. Testing
+  [Go to the top](#table-of-contents)
+## 4.1 Testing using tools
+### 4.1.1 Google Developer Tools
+I make use of google developer tools (Chrome DevTools) as debugging tools. Using this tool i inspect for every elements that I added in HTML and CSS style. Once I was happy with, I copy the CSS style code from Chrome DevTools and paste in my CSS style sheet.
