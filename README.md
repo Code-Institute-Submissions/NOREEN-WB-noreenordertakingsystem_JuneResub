@@ -169,3 +169,10 @@ I make use of google developer tools (Chrome DevTools) as debugging tools. Using
 ### 4.1.2 Responsive Tools
 
 In order to make sure that design web pages are responsive to all device sizes, [Am I Responsive](http://ami.responsivedesign.is/) site was used to check it.
+
+### 4.1.3 W3C Validator Tools
+
+[W3C Markup] (https://validator.w3.org/) was used to check for any errors within my HTML pages.
+[W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within my CSS stylesheet. No errors were found.
+w3cvalidator
+![w3cvalidator ](assets/images/w3cvalidator.PNG)
