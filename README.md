@@ -78,3 +78,6 @@ Other foreground and background color used in the sites are
 
 ### FastFood
 ![Desktop Version](assets/images/FastFood.PNG)
+
+### OrderDetails
+![Desktop Version](assets/images/OrderDetails.PNG)
