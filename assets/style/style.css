@@ -215,7 +215,21 @@ h2 {
 .menus-row {
   cursor: pointer;
 }
-
+@media screen and (max-width: 400px) {
+  .traditional-btn {
+    font-size: 8px;
+  }
+  .chinese-btn {
+    font-size: 8px;
+  }
+  .fastFood-btn {
+    font-size: 8px;
+  }
+  h2 {
+    
+    font-size: xx-small;
+  }
+}
 /*Contact page styling*/
 
 .container1 {
