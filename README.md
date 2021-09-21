@@ -72,3 +72,6 @@ Other foreground and background color used in the sites are
 
 ### Traditional
 ![Desktop Version](assets/images/Traditional.PNG)
+
+### Chinese
+![Desktop Version](assets/images/chineese.PNG)
