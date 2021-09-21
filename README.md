@@ -56,3 +56,13 @@ amireponsiveContact
 Other foreground and background color used in the sites are
 * foreground: #ffffff
 * background: #044348
+
+<a name="wireframes"></a>
+## 1.3 Site Skeleton
+  [Go to the top](#table-of-contents)
+ 
+[Balsamiq](https://balsamiq.com/) was used to create wireframes of the website. This was very useful as it gives the template of the UI. Wireframes were designed for web browser and a mobile browser format. The concept design (wireframes) of webpages (3 pages) prepared is presented below.
+
+
+<a name="introduction-page"></a>
+### Introduction Page
