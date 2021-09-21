@@ -84,3 +84,6 @@ Other foreground and background color used in the sites are
 
 ### ProcessOrder
 ![Desktop Version](assets/images/ProcessOrder.PNG)
+
+### SubTotal
+![Desktop Version](assets/images/SubTotal.PNG)
