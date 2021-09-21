@@ -9,3 +9,25 @@ We have complete order management system. We have paper less enviroment. Waiter'
 amireponsiveContact
 ![website preview](assets/images/amiresponsive.JPG)
 ![website preview](assets/images/amireponsiveContact.JPG)
+
+## Table of Contents 
+
+# Table of Contents
+ [1. User Expereince (UX) design](#ux)
+  - [User Expectations:](#user-expectations)
+  -	[Colour scheme and font](#color-scheme)
+  - [Site skeleton (wireframes)-2 pages](#wireframes)
+    - [Home page](#home-page)
+    - [Contact page](#contact-page)
+
+ [2. Features](#features)
+
+ [3.Technologies used](#technologies-used)
+
+ [4.Testing](#testing)
+
+ [5.Bugs](#bugs)
+
+ [6. Deployment](#deployment)
+
+ [7. Acknowledgement](#acknowledgement)
