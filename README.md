@@ -75,3 +75,6 @@ Other foreground and background color used in the sites are
 
 ### Chinese
 ![Desktop Version](assets/images/chineese.PNG)
+
+### FastFood
+![Desktop Version](assets/images/FastFood.PNG)
