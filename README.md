@@ -90,3 +90,8 @@ Other foreground and background color used in the sites are
 
 ### cancel
 ![Desktop Version](assets/images/cancel.PNG)
+
+
+### Mobile Order Details
+
+![Mobile Version](assets/images/mobile-Order.PNG)
