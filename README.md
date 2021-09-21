@@ -174,5 +174,6 @@ In order to make sure that design web pages are responsive to all device sizes, 
 
 [W3C Markup] (https://validator.w3.org/) was used to check for any errors within my HTML pages.
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within my CSS stylesheet. No errors were found.
-w3cvalidator
 ![w3cvalidator ](assets/images/w3cvalidator.PNG)
+jigsawvalidator
+![jigsawvalidator ](assets/images/jigsawvalidator.PNG)
