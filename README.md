@@ -95,3 +95,6 @@ Other foreground and background color used in the sites are
 ### Mobile Order Details
 
 ![Mobile Version](assets/images/mobile-Order.PNG)
+
+### Mobile Contact
+![Mobile Version](assets/images/mobile-Contact.PNG)
