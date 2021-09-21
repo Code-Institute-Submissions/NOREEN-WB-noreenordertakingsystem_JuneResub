@@ -207,7 +207,9 @@ body {
 .table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
-
+h4{
+  visibility: hidden;
+}
 h2 {
   color: #009879;
   text-align: center;
