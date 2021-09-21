@@ -126,3 +126,4 @@ Secreen shot of the Home page is below:
 ![introduction page review ](assets/images/index.JPG)
 ![introduction page review ](assets/images/TraditionalScreen.JPG)
 ![introduction page review ](assets/images/ChineeseScreen.JPG)
+![introduction page review ](assets/images/FastFoodScreen.JPG)
