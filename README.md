@@ -31,3 +31,28 @@ amireponsiveContact
  [6. Deployment](#deployment)
 
  [7. Acknowledgement](#acknowledgement)
+
+ <a name="ux"></a>
+# 1. User Expereince (UX) design
+  [Go to top](#table-of-contents)
+ 
+  The purpose of this is Order Management System. Which provides paper less system. waiter uses this website to take order from the customer. Waiter takes order from customer and then process the order. A reiept is generated of the order.
+  
+  
+  <a name="user-expectations"></a>
+## 1.1 User Expectation 
+  [Go to top](#table-of-contents)
+
+  Menu is shown in different tabs. there are three buttons Traditional, chinese and fast food. When waiter clicks on Traditional button menu of traditional item is displayed. When waiter clicks on Chinese button menu of Chinese item is displayed. When waiter clicks on Fast Food button menu of Fast Food item is displayed. Folloiwng user's expections are considered while designing the site:
+* The site structure is designed considering the expectation of users to be simple and easy to use.
+* The user interface is easy to navigate (inlcude main navigation bar, drop dwon menu bar and a link at bottom of page that user can go back to top of the page in just one click).
+* Responsive design for all screen/device sizes like mobile, tablet and desktop.
+  
+  <a name="color-scheme"></a>
+## 1.2 Color Scheme 
+  [Go to top](#table-of-contents)
+  The choice of website right foreground and background colour is essential that decides the site visitors wheather to emote the site or not. In this design we consider the accessibility guideline i.e, contrast between background and foreground colours.
+
+Other foreground and background color used in the sites are
+* foreground: #ffffff
+* background: #044348
