@@ -32,7 +32,7 @@ function clicked(id){
   // after getting the sorted result - place it in orderdetail table
 
   let rowHtml = "";
-
+let order;
   for (order of orders) {
     rowHtml += `
       <tr>
