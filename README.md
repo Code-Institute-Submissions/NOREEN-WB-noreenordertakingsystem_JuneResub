@@ -87,3 +87,6 @@ Other foreground and background color used in the sites are
 
 ### SubTotal
 ![Desktop Version](assets/images/SubTotal.PNG)
+
+### cancel
+![Desktop Version](assets/images/cancel.PNG)
