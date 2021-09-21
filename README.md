@@ -119,3 +119,8 @@ Other foreground and background color used in the sites are
 - when waiter click on the process button, a popup appears with subtotal and options with cancel order and proceed order.
 - when click on the process order, ther order is completed and a reciept is printed.
 - when click on the cancel order, order is canceld.
+
+Secreen shot of the Home page is below:
+
+
+![introduction page review ](assets/images/index.JPG)
