@@ -9,8 +9,15 @@ function extractValue(arr, prop) {
   return extractedValue;
 }
 
+//remove order from array
+function removeOrder(b) {
+  orders.splice(b, 1);
+  result = extractValue(orders, "amount");
+  document.getElementById("tbody").deleteRow(b);
+}
+
 //onclick fucntion to get data from menu array
-function clicked(id){
+function clicked(id) {
   //filter the menu array to get the dish that  user clicked on menu
   const item = menus.filter((x) => x.id === id);
   let a = item[0].price;
@@ -29,23 +36,26 @@ function clicked(id){
     o.quantity++;
     o.amount = item[0].price * o.quantity;
   }
+
   // after getting the sorted result - place it in orderdetail table
 
   let rowHtml = "";
-let order;
+  let order;
+  let b = 0;
   for (order of orders) {
     rowHtml += `
-      <tr>
+      <tr class="menus-row" onclick="removeOrder(${b})">
         <td>${order.name}</td>
         <td>${order.quantity}</td>
         <td>${order.amount}</td>
+        <td><i class="fas fa-trash"></i></td>
       </tr>
     `;
+    b++;
   }
   document.getElementById("tbody").innerHTML = rowHtml;
   result = extractValue(orders, "amount");
 }
-
 
 // Type Array to differentiate menu
 const type = [
@@ -226,26 +236,26 @@ function getChineese() {
       </thead>
     <tbody>
   `;
- //loop through the menu array and get the Chinese dishes from it - then send it for orderDetail array using onClick function
+  //loop through the menu array and get the Chinese dishes from it - then send it for orderDetail array using onClick function
 
- for (let i = 0; i < menus.length; i++) {
-  if (menus[i].typeId === 2) {
-    let rowHtml = `
+  for (let i = 0; i < menus.length; i++) {
+    if (menus[i].typeId === 2) {
+      let rowHtml = `
     <tr class="menus-row" onclick="clicked(${menus[i].id})">
       <td>${menus[i].id}</td>
       <td>${menus[i].name}</td>
       <td>${menus[i].price}</td>
     </tr>
   `;
-    html += rowHtml;
+      html += rowHtml;
+    }
   }
-}
-html += `
+  html += `
   </tbody>
   </table>
 `;
 
-document.getElementById("trd-div").innerHTML = html;
+  document.getElementById("trd-div").innerHTML = html;
 }
 // Menu list for fastFood
 function getFastFood() {
@@ -260,26 +270,26 @@ function getFastFood() {
       </thead>
     <tbody>
   `;
-//loop through the menu array and get the fastFood dishes from it - then send it for orderDetail array using onClick function
+  //loop through the menu array and get the fastFood dishes from it - then send it for orderDetail array using onClick function
 
-for (let i = 0; i < menus.length; i++) {
-  if (menus[i].typeId === 3) {
-    let rowHtml = `
+  for (let i = 0; i < menus.length; i++) {
+    if (menus[i].typeId === 3) {
+      let rowHtml = `
     <tr class="menus-row" onclick="clicked(${menus[i].id})">
       <td>${menus[i].id}</td>
       <td>${menus[i].name}</td>
       <td>${menus[i].price}</td>
     </tr>
   `;
-    html += rowHtml;
+      html += rowHtml;
+    }
   }
-}
-html += `
+  html += `
   </tbody>
   </table>
 `;
 
-document.getElementById("trd-div").innerHTML = html;
+  document.getElementById("trd-div").innerHTML = html;
 }
 
 // print the order given by user. using window.print() method -- optional if not allowed i'll remove it.
@@ -319,7 +329,6 @@ function print() {
     ps.print();
   }
 }
-
 
 //process Order
 //for alert's i did not use the built in method alert() - i use third party cdn sweetalert - which provides beautiful UI for alert's.
@@ -384,7 +393,6 @@ function processorder() {
   }
 }
 
-
 //Contact from focus and effects
 
 const inputs = document.querySelectorAll(".input");
@@ -406,9 +414,8 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
-
 //form validation
-  //get elements from html by using js method 
+//get elements from html by using js method
 let namee = document.getElementById("username");
 let emaill = document.getElementById("email");
 let phone = document.getElementById("phone");
@@ -451,7 +458,6 @@ if (sbmt) {
   });
 }
 
-
 function onSuccess(input) {
   let parent = input.parentElement;
   let msg = parent.querySelector("small");
@@ -472,5 +478,3 @@ function isValidEmail(email) {
     email
   );
 }
-
-
